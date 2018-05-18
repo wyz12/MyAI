@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.myai.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:gravity="center"
+        android:text="自动化微信操作"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+  <TextView
+      android:gravity="center_vertical"
+      android:textSize="18dp"
+      android:text="保存微信账号"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/phone"
+            android:hint="请输入微信号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/pass"
+            android:hint="请输入微信密码密码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+          <Button
+              android:text="保存微信号码"
+              android:id="@+id/bcphone"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+      </LinearLayout>
+
+          <ListView
+              android:layout_weight="1"
+              android:id="@+id/listview"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+          </ListView>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/exit"
+            android:text="退出微信登录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/login"
+          android:text="登录微信账号"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+  <EditText
+      android:id="@+id/phonenumber"
+      android:hint="添加好友手机号码逗号隔开"
+      android:inputType="textMultiLine"
+      android:minLines="3"
+      android:gravity="top"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/time"
+        android:hint="设置间隔时间秒数"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  <Button
+      android:id="@+id/zdh"
+      android:text="自动添加好友"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>
